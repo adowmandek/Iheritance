@@ -1,14 +1,13 @@
-open class People(val name:String,var age:Int){
-    fun talk (words:String){
+open class People(val name:String,var age:Int) {
+    fun talk(words: String) {
         println(words)
     }
-    open fun sleep (){
+
+    open fun sleep() {
         println("zzzzz")
     }
 
 }
-
-
 class Person (name:String,age:Int):People(name,age){
     fun works(){
         println("I work at Sendy")
